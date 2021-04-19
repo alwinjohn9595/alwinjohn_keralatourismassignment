@@ -40,7 +40,7 @@ function validationlogin() {
         let msgsmall = parent.querySelector('small');
         msgsmall.style.visibilty="visible";
         msgsmall.innerText="password cannot be empty";
-        parent.className = 'form-elemets error';
+        parent.className = 'logform-elemets error';
 
      } else{
         setSuccessFor(pwdlog);
