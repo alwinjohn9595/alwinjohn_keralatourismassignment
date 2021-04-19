@@ -4,9 +4,6 @@ let pwdlog = document.getElementById('loginpassword');
 
 
 
-const signformsign = document.getElementById('form');
-let emailid = document.getElementById('txtemail');
-let password = document.getElementById('txtpassword');
 
 
 signformlog.addEventListener('click', (e)=>{
@@ -31,18 +28,18 @@ function validationlogin() {
                     let msgsmall = parent.querySelector('small');
                     msgsmall.style.visibilty="visible";
                     msgsmall.innerText="email formate not correct";
-                    parent.className = 'form-elemets error';
+                    parent.className = 'logform-elemets error';
     
 
     }else{
         setSuccessFor(emailidlog);
     }
 
-     if (pwdvalue === ""){
+     if (pwdvalue == ""){
         let parent = pwdlog.parentElement;
         let msgsmall = parent.querySelector('small');
         msgsmall.style.visibilty="visible";
-        msgsmall.innerText="email formate not correct";
+        msgsmall.innerText="password cannot be empty";
         parent.className = 'form-elemets error';
 
      } else{
@@ -60,7 +57,7 @@ function validationlogin() {
 
 function setSuccessFor(input) {
     const formControl = input.parentElement;
-    formControl.className = 'form-elemets success';
+    formControl.className = 'logform-elemets success';
 }    
 
 function isValidEmail(email){
