@@ -328,61 +328,10 @@ strong{
     margin-left: 3cm;
     position: relative;
     border-radius: 6px;
-
+    
     
 }
 
-.form-elemets{
-    position: relative;
-}
-.form-elemets label {
-    display: inline-block;
-
-
-}
-
-.form-elemets input {
-    width: 100%;
-    display: block;
-    border: 2px solid #f0f0f0;
-    border-radius: 5px;
-
-}
-.form-elemets input:focus{
-    outline: 0;;
-    border-color:black;
-
-}
-.form-elemets.success input {
-    border-color: #2ecc71;
-}
-.form-elemets.error input {
-    border-color: #e74c3c;
-}
-.form-elemets i{
-    position: absolute;
-    right: 6%;
-    top: 30px;
-    visibility: hidden;
-}
-
-.form-elemets.success i.fa-check-circle {
-    color: #2ecc71;
-    visibility: visible;
-}
-.form-elemets.error i.fa-exclamation-circle {
-    color:  #e74c3c;
-    visibility: visible;
-}
-.form-elemets small {
-    
-    visibility: hidden;
-} 
-
-.form-elemets.error small{
-    color:  #e74c3c;
-    visibility: visible;
-}
 .signuppage{
     width: 100%;
     height: 100%;
@@ -390,6 +339,81 @@ strong{
     align-items: center;
     justify-content: center;
 
+}
+
+.input-items {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+input {
+    width: 100%;
+    border: none;
+    height: 30px;
+    padding: 0px 40px 0px 10px;
+    font-size: 18px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.form-elements i {
+    position: absolute;
+    right: 13px;
+    top: 34px;
+    visibility: hidden;
+    
+}
+.form-elements label{
+    font-family: sans-serif;
+    font-size: 1.1em;
+    display: inline-block;
+}
+.form-elements small {
+    visibility: hidden;
+    
+}
+.form-elements.success input {
+  border: 2px solid #2ecc71;
+}
+.form-elements.error input {
+    border: 2px solid #e74c3c;
+  }
+.form-elements.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+}
+.form-elements.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+}
+.form-elements.error small {
+    visibility: visible;
+    color:  #e74c3c;
+    font-size: 1.2em;
+    font-style: italic;
+
+}
+.progress {
+    height: 4px;
+}
+.progress-bar-danger{
+    background-color:#e90f10 ;
+
+}
+.progress-bar-warning{
+    background-color: yellow;
+
+}
+.progress-bar-success{
+    background-color:#02b502 ;
+
+}
+
+.fa-circle{
+    font-size: 6px;
+}
+.fa-check{
+    color: #007F00;
 }
 
 #textsignup{
@@ -404,37 +428,9 @@ strong{
 }
 
 
-#txtpassword{
-    border-color: #2ecc71;
-}
 
 
-.progress{
-    height: 3px !important;
-}
-.form-group{
-    margin-bottom: 10px;
 
-}
-
-.show-pass{
-    position: absolute;
-    right: 8%;
-    top: 40%;
-}
-
-.progress-bar-danger{
-    background-color: #e90f10;
-}
-.progress-bar-waring{
-    background-color: #ffad00;
-}
-.progress-bar-success{
-    background-color: #02b502;
-}
-.fa-eye{
-    cursor: pointer;
-}
 /* /signup page */
 .centertag{
     

@@ -1,0 +1,343 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    scroll-behavior:smooth;
+    transition: 5s;
+} 
+
+ .header-background {
+    background-image: url(./images/bkg.jpg);
+    background-size: cover;
+    max-width: 100%;
+    height: auto;
+
+}  
+
+#login{
+    display: none;
+}
+
+.nav-item{
+    padding-top: 10px;
+}
+.nav-item a:hover{
+    color:#ffa500!important;
+}
+
+.navbar-nav{
+    color: black;
+    font-size: 1.5 rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+} 
+
+/* ----/header---- */
+
+/* ---backgroundimage--- */
+
+.hero-wrap{
+
+    width: 100%;
+    height: 850px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    z-index: 0;
+
+}
+
+/* ---backgroundimage--- */
+
+
+/* --------main-text------ */
+
+.hero-wrap .text{
+    padding-top: 75px;
+    font-size: 1.2em;
+    height: 800px!important;
+    color:#ffa500;
+}
+
+.btn-hero{
+    background-color: #ffa500;
+    animation: skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding: 5px 17px;
+}
+
+@keyframes skew{
+    0%{
+        transform: skew(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+
+    }
+}
+ 
+/* --------/main-text------ */
+
+
+/* ---------experiences---------- */
+.heading-section h2{
+    text-transform:uppercase;
+    font-weight: bold;
+}
+.img-wrap .effect{
+    position:relative;
+    margin-bottom: 0;
+    display: block;
+}
+.img-wrap .effect::after{
+    z-index: -1;
+    content:"";
+    position: absolute;
+    top:10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+    background-color: #011525;
+    transition: 0.3s all ease-in-out;
+}
+
+.img-wrap:hover .effect::after{
+    right: -10px;
+    bottom:-10px;
+    position: absolute;
+}
+
+.btn-about{
+    background-color: #ffa500;
+    animation: skew 3s infinite;
+    animation-direction: normal;
+    transform: skew(20deg);
+    animation-direction: alternate;
+    padding: 5px 17px;
+}
+
+@keyframes skew{
+    0%{
+        transform: skew(20deg);
+    }
+    100%{
+        transform: skewX(-20deg);
+
+    }
+}
+/* ---------/experiences---------- */
+
+
+/* -----------top destinations------------ */
+
+.section-title1 h1{
+    
+    margin-left: 3cm;
+    padding-bottom: 8cm;
+    font-weight: bold;
+    color: black;
+    font-size: 4em;
+}
+.popular{
+    background-image: url(./images/bkg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 180px;
+    padding-top: 340px;
+}
+
+.popular::before{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(rgba(207,236,249, 0.8),rgba(1,23,41,0.4))
+    url(./images/bkg1.jpg) center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+
+.all-image{
+    padding-bottom: 75px;
+    position: relative;
+    margin-bottom: -295px;
+    
+}
+.all-image .single-img{
+    position: relative;
+    margin-bottom:20px;
+    overflow: hidden;
+}
+
+.all-image .single-img .img-thumb {
+    height: 410px;
+
+}
+.all-image .single-img .img-thumb img{
+    width: 100%;
+    height: 100%;
+}
+.all-image .single-img .img-hover{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(2,58,110,0.6);
+    transition: 0.5s;
+    transform : translateX(-50%);
+    opacity: 0;
+    overflow: hidden;
+
+}
+
+.all-image .single-img .img-hover .text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right:0;
+    text-align: center;
+    transform: translateY(-50%);
+
+}
+
+.all-image .single-img .img-hover h3{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.all-image .single-img:hover .img-hover{
+    transform: translateX(0%);
+    opacity: 1;
+    
+}
+
+
+/* ------------------services------------------- */
+.section-title{
+    text-align: center!important;
+}
+/* ------------------services------------------- */
+
+
+.contact-section
+{
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 2.8rm;
+    font-weight: 500;
+}
+.contact-left .paragraph{
+     padding:  0rem 3rem 0rem 3rem ;
+     font-size: 1rem;
+     line-height: 1.2;
+}
+
+strong{
+    font-weight: 700;
+}
+
+.phone-mail-link{
+    color: cornsilk;
+    font-weight: bold;
+}
+.phone-mail-link:hover{
+    color: #ffa500;
+}
+
+#contact-form{
+    margin-top: 40px;
+}
+
+#contact-form .form-control{
+    background:#ffae1a;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: none;
+    font-weight: 300;
+    outline: medium none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    line-height: 1.2;
+    height: auto;
+    width:100%;
+    color: white;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease;
+
+}
+
+
+
+/* -------- district------------ */
+#container {
+    display: grid;
+    margin-left: 12cm;
+
+    
+    height: 200px;
+    width: 50%;
+  }
+
+
+  .text1 {
+      position: relative;
+      margin-top: 8cm;
+      align-content: center;
+      margin-left: 4cm;
+
+  }
+
+  .text2 {
+    position: absolute;
+    align-content: center;
+    margin-left: 2cm;
+
+}
+ 
+#place-grid{
+    position: absolute;
+    margin-left: 5cm;
+    margin-top: 10cm;
+}
+
+
+/* ------loginform ------- */
+.login{
+      margin-top: 3cm;
+      width: 7cm;  
+      height: 50%;
+      background-color:rgb(255, 165, 0);;
+      padding: 7px;
+      border: ridge;
+      margin-left: 3cm;
+
+}
+
+.signin{
+    
+    margin-top: 3cm;
+    width: 10cm;
+    border: ridge;
+    padding: 7px;
+    background-color:rgba(255, 165, 0.1);
+    margin-left: 3cm;
+}
+.centertag{
+    
+    margin-top: 3cm;
+    color:black;
+    margin-left: 3cm;
+    font-weight: bold;
+}
