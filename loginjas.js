@@ -10,7 +10,7 @@ signformlog.addEventListener('click', (e)=>{
     e.preventDefault();
 
     validationlogin();
-    validation();
+    
 
 });
 
